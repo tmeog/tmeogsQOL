@@ -1,0 +1,315 @@
+Mods: {
+	tmeogsQOL: {
+		Projectiles: {
+			WaypointProj.DisplayName: Waypoint Proj
+			SwordSwingProj.DisplayName: Sword Swing
+			SunDeathProj.DisplayName: Sun Death
+			StarProj.DisplayName: Star
+			SkeleProj.DisplayName: Skele Proj
+			QueenSlimeProj.DisplayName: Queen Slime Proj
+			PlantProj.DisplayName: Plant Proj
+			PillarProj.DisplayName: Pillar Proj
+			MoonlordProj.DisplayName: Moonlord Proj
+			MechWormProj.DisplayName: Mech Worm Proj
+			MechSkeleProj.DisplayName: Mech Skele Proj
+			MechEyesProj.DisplayName: Mech Eyes Proj
+			KingslimeProj.DisplayName: Kingslime Proj
+			HotLightLadyProj.DisplayName: Hot Light Lady Proj
+			GolemProj.DisplayName: Golem Proj
+			EyeProj.DisplayName: Eye Proj
+			EOWProj.DisplayName: E O W Proj
+			EnderPearlProj.DisplayName: Ender Pearl
+			DukeProj.DisplayName: Duke Proj
+			DeerProj.DisplayName: Deer Proj
+			CultProj.DisplayName: Cult Proj
+			BOCProj.DisplayName: B O C Proj
+			BlackHoleProj.DisplayName: Black Hole
+			BeeProj.DisplayName: Bee Proj
+			WOFProj.DisplayName: W O F Proj
+		}
+
+		Items: {
+			WeatherControl: {
+				Tooltip:
+					'''
+					Its a disc with a faint humanoid cloud on the side, somehow you can harness its power to control the weather
+					Left click to toggle rain
+					Right click to toggle wind
+					'''
+				DisplayName: Strange Disc
+			}
+
+			GraveDestroyer: {
+				Tooltip: Breaks all graves in the world
+				DisplayName: Grave Destroyer
+			}
+
+			Waypoint: {
+				Tooltip:
+					'''
+					Right click to create waypoint
+					Left click to teleport to waypoint 
+					Doesn't work while a boss is alive
+					'''
+				DisplayName: Waypoint Wand UNOBTAINABLE
+			}
+
+			TravelMerchantShopReset: {
+				Tooltip: Resets the traveling merchants shop
+				DisplayName: Traveling Merchant Shop Reset
+			}
+
+			magicStopwatch: {
+				Tooltip:
+					'''
+					Left click to skip to day/night depending on current time 
+					Right click to change moon phase 
+					Also tells time while in inventory
+					'MADEO IN HEAVEN'
+					'''
+				DisplayName: Strange Clock
+			}
+
+			GalaxySword: {
+				Tooltip: You can't get this without cheats
+				DisplayName: greg
+			}
+
+			EnderPearl: {
+				Tooltip: You can't get this without cheats
+				DisplayName: Ender Pearl
+			}
+
+			DifficultyChanger: {
+				Tooltip:
+					'''
+					Left click cycles through the world difficulty
+					Right click cycles through the player difficulty
+					Doesn't work while a boss is alive
+					'''
+				DisplayName: Difficulty Changer
+			}
+
+			WOFsummon: {
+				Tooltip:
+					'''
+					Summons Wall of Flesh
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin doll
+			}
+
+			TwinsSummon: {
+				Tooltip:
+					'''
+					Summons the Twins
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin eyes
+			}
+
+			SkeletronSummon: {
+				Tooltip:
+					'''
+					Summons Skeletron
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin puppet
+			}
+
+			PlantSummon: {
+				Tooltip:
+					'''
+					Summons Plantera 
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin plant
+			}
+
+			PillarSummon: {
+				Tooltip:
+					'''
+					Summons the Celestial Pillars
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin bait
+			}
+
+			MoonLordSummon: {
+				Tooltip:
+					'''
+					Summons Moon Lord
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin sigil
+			}
+
+			MechWormSummon: {
+				Tooltip:
+					'''
+					Summons Destroyer
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+				DisplayName: Weird lookin machine
+			}
+
+			BeeSummon: {
+				DisplayName: Weird lookin honey
+				Tooltip:
+					'''
+					Summons Queen Bee 
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			BOCSummon: {
+				DisplayName: Weird lookin spine
+				Tooltip:
+					'''
+					Summons Brain of Cthulhu
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			DeerSummon: {
+				DisplayName: Weird lookin deer
+				Tooltip:
+					'''
+					Summons Deerclops
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			EOCSummon: {
+				DisplayName: Weird lookin eye
+				Tooltip:
+					'''
+					Summons Eye of Cthulhu
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			EOWSummon: {
+				DisplayName: Weird lookin food
+				Tooltip:
+					'''
+					Summons Eater of Worlds
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			FishSummon: {
+				DisplayName: Weird lookin worm
+				Tooltip:
+					'''
+					Summons Duke Fishron
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			GolemSummon: {
+				DisplayName: Weird lookin battery
+				Tooltip:
+					'''
+					Summons Golem
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			HotLightLadySummon: {
+				DisplayName: Weird lookin prism
+				Tooltip:
+					'''
+					Summons Empress of Light
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			KingSlimeSummon: {
+				DisplayName: Weird lookin crown
+				Tooltip:
+					'''
+					Summons King Slime
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			LunaticSummon: {
+				DisplayName: Weird lookin tablet
+				Tooltip:
+					'''
+					Summons Lunatic Cultist 
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			MechSkeletonSummon: {
+				DisplayName: Weird lookin skull
+				Tooltip:
+					'''
+					Summons Skeletron Prime
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			QueenSlimeSummon: {
+				DisplayName: Weird lookin crystal
+				Tooltip:
+					'''
+					Summons Skeletron Prime
+					Can spawn multiple bosses at once
+					Not Consumable
+					'''
+			}
+
+			Greg: {
+				Tooltip: ""
+				DisplayName: Greg
+			}
+		}
+
+		Configs: {
+			Config: {
+				DisplayName: Config
+
+				GoodAxe: {
+					Label: Copper axe = best axe
+					Tooltip: gives the copper axe stats that rival The Once-ler
+				}
+
+				RespawnHP: {
+					Label: % of HP you respawn with
+					Tooltip: Sets the percent of your max life you respawn with
+				}
+
+				PillarHP: {
+					Label: Lunar Pillar Shield HP
+					Tooltip: How many enemies you need to kill to destory the Celestial Pillar's shield
+				}
+
+				RespawnMP: {
+					Label: % of MP you respawn with
+					Tooltip: Sets the percent of your max mana you respawn with
+				}
+			}
+		}
+	}
+}
