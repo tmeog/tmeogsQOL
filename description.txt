@@ -13,3 +13,4 @@ Also, please leave suggestions for what I should add recipes for in the comments
 NEW RECIPES: 602
 
 PATCH NOTES HAVE BEEN MOVED HERE (they got too long): https://docs.google.com/document/d/1s0ixWOXvTctGvNBgVjmEnuBLJojI1t_ux8M5xF5lh6Y/edit?usp=sharing
+Github: https://github.com/tmeog/tmeogsQOL
