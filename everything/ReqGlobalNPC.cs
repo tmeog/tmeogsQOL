@@ -40,7 +40,7 @@ namespace tmeogsQOL.everything
 			if (shop.NpcType == NPCID.Merchant){
 				shop.Add(ModContent.ItemType<TravelMerchantShopReset>());
 
-				shop.Add(new Item(ItemID.Cobweb) {shopCustomPrice  = 500});
+				shop.Add(new Item(ItemID.Cobweb) {shopCustomPrice  = 5});
 
 				shop.Add(ItemID.Marshmallow);
 
