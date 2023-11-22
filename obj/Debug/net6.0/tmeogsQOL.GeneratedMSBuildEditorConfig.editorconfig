@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tmeogsQOL
 build_property.ProjectDir = C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
