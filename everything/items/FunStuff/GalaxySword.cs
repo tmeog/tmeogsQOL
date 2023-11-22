@@ -39,8 +39,6 @@ namespace tmeogsQOL.everything.items.FunStuff
 
 		public override bool? UseItem(Player player)
         {
-			
-
 			switch (swings){
 				case 0:
 					Item.shoot = ModContent.ProjectileType<SunDeathProj>(); // set proj for next swing

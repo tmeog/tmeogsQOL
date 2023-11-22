@@ -26,6 +26,7 @@ Mods: {
 			BlackHoleProj.DisplayName: Black Hole
 			BeeProj.DisplayName: Bee Proj
 			WOFProj.DisplayName: W O F Proj
+			SkullEmojiProj.DisplayName: Skull Emoji Proj
 		}
 
 		Items: {
@@ -283,6 +284,11 @@ Mods: {
 			Greg: {
 				Tooltip: ""
 				DisplayName: Greg
+			}
+
+			SkullEmoji: {
+				Tooltip: ""
+				DisplayName: Skull Emoji
 			}
 		}
 

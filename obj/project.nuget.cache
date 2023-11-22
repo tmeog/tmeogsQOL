@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkQPh3/IyXibjZgzUSvOgTC8CLWN8FB53mG6svRpjn5r2zZvFHXeJ1bzWgd792xxsLXoudYMygP03ETRQNF9NQ==",
+  "dgSpecHash": "X/0+g5pGGreOLl83WRVD9HsenaM4W84M48y7G3UBk8zm85VwQdVnSoc06ySXM6DAqE6jPXNmIN8h8g9l2TYLQQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
+  "projectFilePath": "C:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luigi\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512",
     "C:\\Users\\luigi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",

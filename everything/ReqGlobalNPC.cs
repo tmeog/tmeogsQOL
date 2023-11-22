@@ -9,6 +9,19 @@ using Terraria.Localization;
 using Terraria.Chat;
 using System;
 
+	//TODO: relearn github shit	
+	//TODO: Make some items only give recipe when you have a certain name w/ this:
+	/*
+	
+	[in mod item]
+
+	if (Main.player[Main.myPlayer].name == "RequiemTA")
+        {
+            RECIPE
+        }
+
+	*/
+
 namespace tmeogsQOL.everything
 {
 	public class ReqGlobalNPC : GlobalNPC

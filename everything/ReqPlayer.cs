@@ -2,6 +2,9 @@
 using Terraria.ModLoader;
 using System;
 using System.Collections.Generic;
+using Terraria.ID;
+using tmeogsQOL.everything.items.FunStuff;
+using System.Linq;
 
 namespace tmeogsQOL.everything
 {
@@ -28,6 +31,21 @@ namespace tmeogsQOL.everything
 					player.statMana = (int)Math.Round(player.statManaMax2 * ModContent.GetInstance<Config>().RespawnMP);
 					deadPlayers.Remove(player);
 				}
+			}
+		}
+
+		public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
+		{
+			if (Player.name == "RequiemTA")
+			{
+				return new[] 
+				{
+					new Item(ModContent.ItemType<SkullEmoji>())
+				};
+			} 
+			else 
+			{
+				return Enumerable.Empty<Item>();
 			}
 		}
 	}
