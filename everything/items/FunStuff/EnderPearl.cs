@@ -16,9 +16,9 @@ namespace tmeogsQOL.everything.items.FunStuff
 			Item.height = 128;
 			Item.useTime = 28;
 			Item.useAnimation = 28;
-			Item.useStyle = 1;
+			Item.useStyle = ItemUseStyleID.Swing;
 			Item.value = 10000;
-			Item.rare = 11;
+			Item.rare = ItemRarityID.Purple;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = false;
 			Item.shootSpeed = 28f;

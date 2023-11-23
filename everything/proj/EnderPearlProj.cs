@@ -19,7 +19,7 @@ namespace tmeogsQOL.everything.proj
             Projectile.ignoreWater = false;
 		}
 
-		public override void Kill (int timeLeft){
+		public override void OnKill (int timeLeft){
 			Player player = Main.player[Projectile.owner];
 			player.Teleport(Projectile.position, 1);
 		}

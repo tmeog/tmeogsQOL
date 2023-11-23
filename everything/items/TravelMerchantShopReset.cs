@@ -18,9 +18,9 @@ namespace tmeogsQOL.everything.items
 			Item.height = 40;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
-			Item.useStyle = 4;
+			Item.useStyle = ItemUseStyleID.HoldUp;
 			Item.value = Item.buyPrice(gold: 1);
-			Item.rare = 2;
+			Item.rare = ItemRarityID.Green;
 			Item.noMelee = true;
 			Item.UseSound = SoundID.Item29;
 			Item.autoReuse = false;

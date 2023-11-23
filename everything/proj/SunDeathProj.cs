@@ -101,11 +101,11 @@ namespace tmeogsQOL.everything.proj
 			}
 		}
 
-		public override void Kill (int timeLeft){
+		public override void OnKill (int timeLeft){
 			for (int i = 0; i < 150; i++){
 					Dust dust;
 					Vector2 position = Projectile.Center - new Vector2(500 / 2, 500 / 2);
-					dust = Main.dust[Terraria.Dust.NewDust(position, 500, 500, 4, 0f, 0f, 0, new Color(0,22,255), 2.5f)];
+					dust = Main.dust[Terraria.Dust.NewDust(position, 500, 500, DustID.TintableDust, 0f, 0f, 0, new Color(0,22,255), 2.5f)];
 					dust.noGravity = true;
 			}
 

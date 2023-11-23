@@ -26,9 +26,9 @@ namespace tmeogsQOL.everything.items
 			Item.height = 64;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
-			Item.useStyle = 1;
+			Item.useStyle = ItemUseStyleID.Swing;
 			Item.value = 10000;
-			Item.rare = 2;
+			Item.rare = ItemRarityID.Green;
 			Item.noMelee = true;
 			Item.autoReuse = false;
 			Item.consumable = false;
@@ -65,7 +65,7 @@ namespace tmeogsQOL.everything.items
                 			Main.NewText(text, TC);
             			} else if (Main.netMode == NetmodeID.Server){
                 			ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), TC);
-                			NetMessage.SendData(7);
+                			NetMessage.SendData(MessageID.WorldData);
             		}
 				}
 			}
@@ -86,7 +86,7 @@ namespace tmeogsQOL.everything.items
                 			Main.NewText(text2, TC);
             			} else if (Main.netMode == NetmodeID.Server){
                 			ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text2), TC);
-                			NetMessage.SendData(7);
+                			NetMessage.SendData(MessageID.WorldData);
 						}
 			}
 			return true;
