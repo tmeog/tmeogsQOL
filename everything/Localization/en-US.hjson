@@ -27,6 +27,7 @@ Mods: {
 			BeeProj.DisplayName: Bee Proj
 			WOFProj.DisplayName: W O F Proj
 			SkullEmojiProj.DisplayName: Skull Emoji Proj
+			SkullEmojiProj_purple.DisplayName: Skull Emoji Proj_purple
 		}
 
 		Items: {
@@ -281,14 +282,9 @@ Mods: {
 					'''
 			}
 
-			Greg: {
-				Tooltip: ""
-				DisplayName: Greg
-			}
-
 			SkullEmoji: {
-				Tooltip: ""
-				DisplayName: Skull Emoji
+				Tooltip: Realest gun of all time
+				DisplayName: Bone Zone
 			}
 		}
 

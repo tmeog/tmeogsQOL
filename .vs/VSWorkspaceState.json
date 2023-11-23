@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\everything"
+    "\\everything",
+    "\\everything\\items",
+    "\\everything\\items\\FunStuff"
   ],
-  "SelectedNode": "\\everything\\NPCchanges.cs",
+  "SelectedNode": "\\everything\\items\\FunStuff\\SkullEmoji.cs",
   "PreviewInSolutionExplorer": false
 }

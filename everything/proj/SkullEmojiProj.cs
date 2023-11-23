@@ -14,8 +14,8 @@ namespace tmeogsQOL.everything.proj
 		bool FunniSound = false;
 		public override void SetDefaults()
 		{
-			Projectile.width = 128;
-            Projectile.height = 128;
+			Projectile.width = 120;
+            Projectile.height = 72;
 
             Projectile.aiStyle = 1;
 			Projectile.DamageType = DamageClass.Ranged;

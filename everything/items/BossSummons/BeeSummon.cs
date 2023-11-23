@@ -22,9 +22,9 @@ namespace tmeogsQOL.everything.items.BossSummons
 			Item.height = 40;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
-			Item.useStyle = 4;
+			Item.useStyle = ItemUseStyleID.HoldUp;
 			Item.value = 10000;
-			Item.rare = 2;
+			Item.rare = ItemRarityID.Green;
 			Item.noMelee = true;
 			Item.UseSound = SoundID.Roar;
 			Item.autoReuse = false;

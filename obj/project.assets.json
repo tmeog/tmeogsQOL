@@ -31,19 +31,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luigi\\.nuget\\packages\\": {}
+    "C:\\Users\\luigi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
+      "projectUniqueName": "C:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
       "projectName": "tmeogsQOL",
-      "projectPath": "c:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
+      "projectPath": "C:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\tmeogsQOL.csproj",
       "packagesPath": "C:\\Users\\luigi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\obj\\",
+      "outputPath": "C:\\Users\\luigi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\tmeogsQOL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\luigi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -88,15 +93,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.25, 6.0.25]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.20, 6.0.20]"
+            "version": "[6.0.25, 6.0.25]"
           }
         ],
         "frameworkReferences": {
@@ -104,7 +109,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

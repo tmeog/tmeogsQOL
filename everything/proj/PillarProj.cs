@@ -24,7 +24,7 @@ namespace tmeogsQOL.everything.proj
             return false;
         }
 
-        public override void Kill(int timeLeft){
+        public override void OnKill(int timeLeft){
 			if (Main.netMode == NetmodeID.MultiplayerClient)
                 return;
 

@@ -22,9 +22,9 @@ namespace tmeogsQOL.everything.items
 			Item.height = 30;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
-			Item.useStyle = 4;
+			Item.useStyle = ItemUseStyleID.HoldUp;
 			Item.value = 1000000;
-			Item.rare = 2;
+			Item.rare = ItemRarityID.Green;
 			Item.noMelee = true;
 			Item.UseSound = SoundID.Roar;
 			Item.autoReuse = false;
@@ -108,7 +108,7 @@ namespace tmeogsQOL.everything.items
             else if (Main.netMode == NetmodeID.Server)
             {
                 ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), new Color(175, 75, 255));
-                NetMessage.SendData(7);
+                NetMessage.SendData(MessageID.WorldData);
             }
 			return true;
 		}
