@@ -6,6 +6,7 @@ using tmeogsQOL.everything.proj;
 using Terraria.GameContent.Creative;
 using Terraria.DataStructures;
 using Terraria.Localization;
+using Terraria.Chat;
 
 namespace tmeogsQOL.everything.items.BossSummons
 {
@@ -36,6 +37,19 @@ namespace tmeogsQOL.everything.items.BossSummons
                     NetMessage.SendData(MessageID.WorldData, -1, -1, null, 0, 0f, 0f, 0f, 0, 0, 0);
 			Point Pos = Main.MouseWorld.ToPoint();
 			Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<BeeProj>(), 0, 0, Main.myPlayer);
+
+			string text = "Queen bee has awoken!";
+
+			if (Main.netMode == NetmodeID.SinglePlayer)
+            {
+                Main.NewText(text, new Color(175, 75, 255));
+            }
+            else if (Main.netMode == NetmodeID.Server)
+            {
+                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), new Color(175, 75, 255));
+                NetMessage.SendData(MessageID.WorldData);
+            }
+
 			return false;
 		}
 		public override void AddRecipes()
