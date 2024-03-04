@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\everything",
     "\\everything\\items",
-    "\\everything\\items\\FunStuff"
+    "\\everything\\items\\FunStuff",
+    "\\everything\\Localization"
   ],
-  "SelectedNode": "\\everything\\items\\FunStuff\\SkullEmoji.cs",
+  "SelectedNode": "\\build.txt",
   "PreviewInSolutionExplorer": false
 }

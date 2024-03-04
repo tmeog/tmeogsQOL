@@ -9,19 +9,6 @@ using Terraria.Localization;
 using Terraria.Chat;
 using System;
 
-	//TODO: relearn github shit	
-	//TODO: Make some items only give recipe when you have a certain name w/ this:
-	/*
-	
-	[in mod item]
-
-	if (Main.player[Main.myPlayer].name == "RequiemTA")
-        {
-            RECIPE
-        }
-
-	*/
-
 namespace tmeogsQOL.everything
 {
 	public class ReqGlobalNPC : GlobalNPC
@@ -59,9 +46,12 @@ namespace tmeogsQOL.everything
 
 				shop.Add(new Item(ItemID.Gel) {shopCustomPrice  = 5});	
 
-				shop.Add(ItemID.RecallPotion);
+				shop.Add(new Item(ItemID.RecallPotion) {shopCustomPrice  = 50000});
 
-				shop.Add(ModContent.ItemType<DifficultyChanger>());
+				if (ModContent.GetInstance<Config>().DifficultyChangerAvailable)
+				{
+					shop.Add(ModContent.ItemType<DifficultyChanger>());
+				}
 
 				shop.Add(new Item(ItemID.Burger) {shopCustomPrice = 50000}, Condition.DownedEowOrBoc);
 

@@ -311,6 +311,11 @@ Mods: {
 					Label: % of MP you respawn with
 					Tooltip: Sets the percent of your max mana you respawn with
 				}
+
+				DifficultyChangerAvailable: {
+					Label: Difficulty Changer Available
+					Tooltip: Makes the Difficulty Changer availible (turn off if your friends are annoying)
+				}
 			}
 		}
 	}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+522549cc837cd5df088079a6c2381f002f09bfdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
