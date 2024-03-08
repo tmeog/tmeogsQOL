@@ -2,7 +2,6 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
-using tmeogsQOL.everything;
 
 namespace tmeogsQOL.everything.items
 {
@@ -15,8 +14,8 @@ namespace tmeogsQOL.everything.items
 
 		public override void SetDefaults()
 		{
-			Item.width = 30;
-			Item.height = 30;
+			Item.width = 36;
+			Item.height = 36;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
 			Item.useStyle = ItemUseStyleID.HoldUp;

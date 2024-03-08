@@ -58,6 +58,5 @@ namespace tmeogsQOL.everything.items.BossSummons
 			recipe.AddIngredient(ItemID.Abeemination);
 			recipe.Register();
 		}
-
 	}
 }

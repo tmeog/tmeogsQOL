@@ -3,8 +3,6 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using Microsoft.Xna.Framework;
-using System;
-using Microsoft.CodeAnalysis;
 
 namespace tmeogsQOL.everything.proj
 {
