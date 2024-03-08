@@ -317,6 +317,32 @@ namespace tmeogsQOL.everything
 			hermesBoots.AddTile(TileID.Anvils);
 			hermesBoots.Register();
 
+			Recipe waterWalkingBoots = Recipe.Create(ItemID.WaterWalkingBoots);
+			waterWalkingBoots.AddIngredient(ItemID.WaterWalkingPotion);
+			waterWalkingBoots.AddIngredient(ItemID.Silk, 5);
+			waterWalkingBoots.AddRecipeGroup("IronBar", 10);
+			waterWalkingBoots.AddTile(TileID.Anvils);
+			waterWalkingBoots.Register();
+
+			Recipe magmaStone = Recipe.Create(ItemID.MagmaStone);
+			magmaStone.AddIngredient(ItemID.Hellstone, 50);
+			magmaStone.AddTile(TileID.TinkerersWorkbench);
+			magmaStone.Register();
+
+			Recipe obsidianRose = Recipe.Create(ItemID.ObsidianRose);
+			obsidianRose.AddIngredient(ItemID.Hellstone, 5);
+			obsidianRose.AddIngredient(ItemID.Obsidian, 50);
+			obsidianRose.AddIngredient(ItemID.NaturesGift);
+			obsidianRose.AddTile(TileID.TinkerersWorkbench);
+			obsidianRose.Register();
+
+			Recipe obsidianRose2 = Recipe.Create(ItemID.ObsidianRose);
+			obsidianRose2.AddIngredient(ItemID.Hellstone, 5);
+			obsidianRose2.AddIngredient(ItemID.Obsidian, 50);
+			obsidianRose2.AddIngredient(ItemID.JungleRose);
+			obsidianRose2.AddTile(TileID.TinkerersWorkbench);
+			obsidianRose2.Register();
+
 			Recipe blackLens = Recipe.Create(ItemID.BlackLens);
 			blackLens.AddIngredient(ItemID.Lens);
 			blackLens.AddIngredient(ItemID.BlackInk);
@@ -345,32 +371,28 @@ namespace tmeogsQOL.everything
 			fishBalloon3.Register();
 
 			Recipe cloudBottle = Recipe.Create(ItemID.CloudinaBottle);
-			cloudBottle.AddIngredient(ItemID.Cloud, 30);
+			cloudBottle.AddIngredient(ItemID.Cloud, 25);
 			cloudBottle.AddIngredient(ItemID.Bottle);
+			cloudBottle.AddTile(TileID.TinkerersWorkbench);
 			cloudBottle.Register();
 
 			Recipe blizzardBottle = Recipe.Create(ItemID.BlizzardinaBottle);
-			blizzardBottle.AddIngredient(ItemID.SnowBlock, 30);
+			blizzardBottle.AddIngredient(ItemID.SnowBlock, 25);
 			blizzardBottle.AddIngredient(ItemID.Bottle);
+			blizzardBottle.AddTile(TileID.TinkerersWorkbench);
 			blizzardBottle.Register();
 
 			Recipe SandBottle = Recipe.Create(ItemID.SandstorminaBottle);
-			SandBottle.AddIngredient(ItemID.SandBlock, 30);
+			SandBottle.AddIngredient(ItemID.SandBlock, 25);
 			SandBottle.AddIngredient(ItemID.Bottle);
+			SandBottle.AddTile(TileID.TinkerersWorkbench);
 			SandBottle.Register();
 
-			Recipe balloon = Recipe.Create(ItemID.ShinyRedBalloon);
-			balloon.AddIngredient(ItemID.Cloud, 20);
-			balloon.AddIngredient(ItemID.Gel, 20);
-			balloon.AddIngredient(ItemID.Rope);
-			balloon.AddTile(TileID.WorkBenches);
-			balloon.Register();
-
 			Recipe ezWings = Recipe.Create(ItemID.CreativeWings);
-			ezWings.AddIngredient(ItemID.Feather, 20);
-			ezWings.AddIngredient(ItemID.Cloud, 10);
+			ezWings.AddIngredient(ItemID.Feather, 50);
+			ezWings.AddIngredient(ItemID.Cloud, 100);
 			ezWings.AddIngredient(ItemID.LuckyHorseshoe);
-			ezWings.AddTile(TileID.Anvils);
+			ezWings.AddTile(TileID.SkyMill);
 			ezWings.Register();
 
 			Recipe moneyTrough = Recipe.Create(ItemID.MoneyTrough);
@@ -435,19 +457,54 @@ namespace tmeogsQOL.everything
 			luckyHorse2.AddTile(TileID.Anvils);
 			luckyHorse2.Register();
 
+			Recipe balloon = Recipe.Create(ItemID.ShinyRedBalloon);
+			balloon.AddIngredient(ItemID.Cloud, 75);
+			balloon.AddIngredient(ItemID.Gel, 50);
+			balloon.AddIngredient(ItemID.Rope, 5);
+			balloon.AddTile(TileID.SkyMill);
+			balloon.Register();
+
+			Recipe starfurry1 = Recipe.Create(ItemID.Starfury);
+			starfurry1.AddIngredient(ItemID.FallenStar, 10);
+			starfurry1.AddIngredient(ItemID.PlatinumBroadsword);
+			starfurry1.AddIngredient(ItemID.PlatinumBar, 5);
+			starfurry1.AddTile(TileID.SkyMill);
+			starfurry1.Register();
+
+			Recipe starfurry2 = Recipe.Create(ItemID.Starfury);
+			starfurry2.AddIngredient(ItemID.FallenStar, 10);
+			starfurry2.AddIngredient(ItemID.PlatinumBroadsword);
+			starfurry2.AddIngredient(ItemID.PlatinumBar, 5);
+			starfurry2.AddTile(TileID.SkyMill);
+			starfurry2.Register();
+
+			Recipe celestialMagnet1 = Recipe.Create(ItemID.CelestialMagnet);
+			celestialMagnet1.AddIngredient(ItemID.ManaCrystal, 1);
+			celestialMagnet1.AddIngredient(ItemID.PlatinumBar, 5);
+			celestialMagnet1.Register();
+
+			Recipe celestialMagnet2 = Recipe.Create(ItemID.CelestialMagnet);
+			celestialMagnet2.AddIngredient(ItemID.ManaCrystal, 1);
+			celestialMagnet2.AddIngredient(ItemID.GoldBar, 5);
+			celestialMagnet2.Register();
+
 			Recipe aglet = Recipe.Create(ItemID.Aglet);
 			aglet.AddRecipeGroup("IronBar");
 			aglet.AddTile(TileID.Anvils);
 			aglet.Register();
 			
 			Recipe enchantedSword1 = Recipe.Create(ItemID.EnchantedSword);
-			enchantedSword1.AddIngredient(ItemID.FallenStar, 5);
+			enchantedSword1.AddIngredient(ItemID.FallenStar, 10);
 			enchantedSword1.AddIngredient(ItemID.GoldBroadsword);
+			enchantedSword1.AddIngredient(ItemID.GoldBar, 5);
+			enchantedSword1.AddTile(TileID.Anvils);
 			enchantedSword1.Register();
 
 			Recipe enchantedSword2 = Recipe.Create(ItemID.EnchantedSword);
-			enchantedSword2.AddIngredient(ItemID.FallenStar, 5);
+			enchantedSword2.AddIngredient(ItemID.FallenStar, 10);
 			enchantedSword2.AddIngredient(ItemID.PlatinumBroadsword);
+			enchantedSword2.AddIngredient(ItemID.PlatinumBar, 5);
+			enchantedSword2.AddTile(TileID.Anvils);
 			enchantedSword2.Register();
 
 			Recipe armySpawn = Recipe.Create(ItemID.GoblinBattleStandard);
@@ -524,17 +581,17 @@ namespace tmeogsQOL.everything
 			radar.AddTile(TileID.Anvils);
             radar.Register();
 
-			Recipe arkalis = Recipe.Create(ItemID.Arkhalis);
-			arkalis.AddIngredient(ItemID.GoldBar, 3);
-			arkalis.AddIngredient(ItemID.EnchantedSword);
-			arkalis.AddTile(TileID.Anvils);
-            arkalis.Register();
+			Recipe terragrim = Recipe.Create(ItemID.Terragrim);
+			terragrim.AddIngredient(ItemID.GoldBar, 3);
+			terragrim.AddIngredient(ItemID.EnchantedSword);
+			terragrim.AddTile(TileID.Anvils);
+            terragrim.Register();
 
-			Recipe arkalis2 = Recipe.Create(ItemID.Arkhalis);
-			arkalis2.AddIngredient(ItemID.PlatinumBar, 3);
-			arkalis2.AddIngredient(ItemID.EnchantedSword);
-			arkalis2.AddTile(TileID.Anvils);
-            arkalis2.Register();
+			Recipe terragrim2 = Recipe.Create(ItemID.Terragrim);
+			terragrim2.AddIngredient(ItemID.PlatinumBar, 3);
+			terragrim2.AddIngredient(ItemID.EnchantedSword);
+			terragrim2.AddTile(TileID.Anvils);
+            terragrim2.Register();
 
 			Recipe jungleAglet = Recipe.Create(ItemID.AnkletoftheWind);
 			jungleAglet.AddIngredient(ItemID.Vine, 2);
@@ -1145,68 +1202,6 @@ namespace tmeogsQOL.everything
 			Handgun5.AddIngredient(ItemID.MagicMissile);
 			Handgun5.AddTile(TileID.WorkBenches);
 			Handgun5.Register();
-
-			//sky chest
-
-			Recipe ShinyRedBalloon1 = Recipe.Create(ItemID.ShinyRedBalloon);
-			ShinyRedBalloon1.AddIngredient(ItemID.Starfury);
-			ShinyRedBalloon1.AddTile(TileID.WorkBenches);
-			ShinyRedBalloon1.Register();
-
-			Recipe ShinyRedBalloon2 = Recipe.Create(ItemID.ShinyRedBalloon);
-			ShinyRedBalloon2.AddIngredient(ItemID.LuckyHorseshoe);
-			ShinyRedBalloon2.AddTile(TileID.WorkBenches);
-			ShinyRedBalloon2.Register();
-
-			Recipe ShinyRedBalloon3 = Recipe.Create(ItemID.ShinyRedBalloon);
-			ShinyRedBalloon3.AddIngredient(ItemID.CelestialMagnet);
-			ShinyRedBalloon3.AddTile(TileID.WorkBenches);
-			ShinyRedBalloon3.Register();
-
-			Recipe Starfury1 = Recipe.Create(ItemID.Starfury);
-			Starfury1.AddIngredient(ItemID.ShinyRedBalloon);
-			Starfury1.AddTile(TileID.WorkBenches);
-			Starfury1.Register();
-
-			Recipe Starfury2 = Recipe.Create(ItemID.Starfury);
-			Starfury2.AddIngredient(ItemID.LuckyHorseshoe);
-			Starfury2.AddTile(TileID.WorkBenches);
-			Starfury2.Register();
-
-			Recipe Starfury3 = Recipe.Create(ItemID.Starfury);
-			Starfury3.AddIngredient(ItemID.CelestialCuffs);
-			Starfury3.AddTile(TileID.WorkBenches);
-			Starfury3.Register();
-
-			Recipe LuckyHorseshoe1 = Recipe.Create(ItemID.LuckyHorseshoe);
-			LuckyHorseshoe1.AddIngredient(ItemID.ShinyRedBalloon);
-			LuckyHorseshoe1.AddTile(TileID.WorkBenches);
-			LuckyHorseshoe1.Register();
-
-			Recipe LuckyHorseshoe2 = Recipe.Create(ItemID.LuckyHorseshoe);
-			LuckyHorseshoe2.AddIngredient(ItemID.Starfury);
-			LuckyHorseshoe2.AddTile(TileID.WorkBenches);
-			LuckyHorseshoe2.Register();
-
-			Recipe LuckyHorseshoe3 = Recipe.Create(ItemID.LuckyHorseshoe);
-			LuckyHorseshoe3.AddIngredient(ItemID.CelestialMagnet);
-			LuckyHorseshoe3.AddTile(TileID.WorkBenches);
-			LuckyHorseshoe3.Register();
-
-			Recipe CelestialMagnet1 = Recipe.Create(ItemID.CelestialMagnet);
-			CelestialMagnet1.AddIngredient(ItemID.Starfury);
-			CelestialMagnet1.AddTile(TileID.WorkBenches);
-			CelestialMagnet1.Register();
-
-			Recipe CelestialMagnet2 = Recipe.Create(ItemID.CelestialMagnet);
-			CelestialMagnet2.AddIngredient(ItemID.ShinyRedBalloon);
-			CelestialMagnet2.AddTile(TileID.WorkBenches);
-			CelestialMagnet2.Register();
-
-			Recipe CelestialMagnet3 = Recipe.Create(ItemID.CelestialMagnet);
-			CelestialMagnet3.AddIngredient(ItemID.LuckyHorseshoe);
-			CelestialMagnet3.AddTile(TileID.WorkBenches);
-			CelestialMagnet3.Register();
 			
 			//main bosses----------------
 			

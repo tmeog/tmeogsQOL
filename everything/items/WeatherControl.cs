@@ -20,8 +20,8 @@ namespace tmeogsQOL.everything.items
 
 		public override void SetDefaults()
 		{
-			Item.width = 30;
-			Item.height = 30;
+			Item.width = 32;
+			Item.height = 32;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
 			Item.useStyle = ItemUseStyleID.HoldUp;

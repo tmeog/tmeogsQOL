@@ -37,5 +37,9 @@ namespace tmeogsQOL
 		[DefaultValue(20)]
 		[ReloadRequired]
 		public int PillarHP { get; set; }
-	}
+
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool DifficultyChangerAvailable { get; set; }
+    }
 }

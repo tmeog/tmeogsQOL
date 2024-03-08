@@ -42,8 +42,13 @@ Mods: {
 			}
 
 			GraveDestroyer: {
-				Tooltip: Breaks all graves in the world
-				DisplayName: Grave Destroyer
+				Tooltip:
+					'''
+					Breaks every grave in the world
+					May also anger a few ghosts
+					'The spell that used a lot of glitter'
+					'''
+				DisplayName: Scroll of Resentment
 			}
 
 			Waypoint: {
@@ -57,8 +62,12 @@ Mods: {
 			}
 
 			TravelMerchantShopReset: {
-				Tooltip: Resets the traveling merchants shop
-				DisplayName: Traveling Merchant Shop Reset
+				Tooltip:
+					'''
+					Swaps out the Traveling Merchants items
+					'this'll change your mind'
+					'''
+				DisplayName: A Singular Dollar
 			}
 
 			magicStopwatch: {
@@ -66,10 +75,10 @@ Mods: {
 					'''
 					Left click to skip to day/night depending on current time 
 					Right click to change moon phase 
-					Also tells time while in inventory
+					Also tells time and moon phase while in inventory
 					'MADEO IN HEAVEN'
 					'''
-				DisplayName: Strange Clock
+				DisplayName: Strange Speedometer
 			}
 
 			GalaxySword: {
@@ -85,11 +94,12 @@ Mods: {
 			DifficultyChanger: {
 				Tooltip:
 					'''
+					An artifact older than time itself
 					Left click cycles through the world difficulty
 					Right click cycles through the player difficulty
 					Doesn't work while a boss is alive
 					'''
-				DisplayName: Difficulty Changer
+				DisplayName: Ancient Artifact
 			}
 
 			WOFsummon: {
@@ -310,6 +320,11 @@ Mods: {
 				RespawnMP: {
 					Label: % of MP you respawn with
 					Tooltip: Sets the percent of your max mana you respawn with
+				}
+
+				DifficultyChangerAvailable: {
+					Label: Difficulty Changer Available
+					Tooltip: Makes the Difficulty Changer availible (turn off if your friends are annoying)
 				}
 			}
 		}
