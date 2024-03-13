@@ -37,9 +37,18 @@ namespace tmeogsQOL.everything.items.BossSummons
 			if (Main.netMode == NetmodeID.Server) //sync time
                     NetMessage.SendData(MessageID.WorldData, -1, -1, null, 0, 0f, 0f, 0f, 0, 0, 0);
 			Point Pos = Main.MouseWorld.ToPoint();
-			Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<SkeleProj>(), 0, 0, Main.myPlayer);
-			
-			string text = "Skeletron has awoken!";
+
+			string text;
+            if (Main.dayTime == true)
+			{
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<DGuardianProj>(), 0, 0, Main.myPlayer);
+                text = "Dungeon Guardian has awoken!";
+            }
+			else
+			{
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<SkeleProj>(), 0, 0, Main.myPlayer);
+                text = "Skeletron has awoken!";
+            }
 
 			if (Main.netMode == NetmodeID.SinglePlayer)
             {

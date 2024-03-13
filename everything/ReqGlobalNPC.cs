@@ -37,7 +37,12 @@ namespace tmeogsQOL.everything
 				shop.Add(new Item(ItemID.Beenade) {shopCustomPrice  = 500}, Condition.DownedQueenBee);
 			}
 
-			if (shop.NpcType == NPCID.Merchant){
+            if (shop.NpcType == NPCID.DyeTrader)
+            {
+                shop.Add(new Item(ItemID.BlackInk) { shopCustomPrice = 50000 });
+            }
+
+            if (shop.NpcType == NPCID.Merchant){
 				shop.Add(ModContent.ItemType<TravelMerchantShopReset>());
 
 				shop.Add(new Item(ItemID.Cobweb) {shopCustomPrice  = 5});

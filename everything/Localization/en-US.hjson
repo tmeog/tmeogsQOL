@@ -28,6 +28,7 @@ Mods: {
 			WOFProj.DisplayName: W O F Proj
 			SkullEmojiProj.DisplayName: Skull Emoji Proj
 			SkullEmojiProj_purple.DisplayName: Skull Emoji Proj_purple
+			DGuardianProj.DisplayName: D Guardian Proj
 		}
 
 		Items: {
@@ -54,11 +55,12 @@ Mods: {
 			Waypoint: {
 				Tooltip:
 					'''
-					Right click to create waypoint
-					Left click to teleport to waypoint 
+					Hits so hard it shatters a hole in reality itself
+					Right click to create a rift
+					Left click to teleport to the rift
 					Doesn't work while a boss is alive
 					'''
-				DisplayName: Waypoint Wand UNOBTAINABLE
+				DisplayName: Boxing Glove
 			}
 
 			TravelMerchantShopReset: {
@@ -125,7 +127,8 @@ Mods: {
 			SkeletronSummon: {
 				Tooltip:
 					'''
-					Summons Skeletron
+					Summons Skeletron during night
+					Summons Dungeon Guardian during day
 					Can spawn multiple bosses at once
 					Not Consumable
 					'''
