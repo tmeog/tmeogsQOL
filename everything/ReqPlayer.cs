@@ -9,18 +9,27 @@ using System.Linq;
 namespace tmeogsQOL.everything
 {
 	public class ReqPlayer : ModPlayer
-    {
+	{
 		List<Player> deadPlayers = new List<Player>();
 
 		public override void OnEnterWorld(){
 			Main.LocalPlayer.statLife = (int)Math.Round(Main.LocalPlayer.statLifeMax2 * ModContent.GetInstance<Config>().RespawnHP);
 			Main.LocalPlayer.statMana = (int)Math.Round(Main.LocalPlayer.statManaMax2 * ModContent.GetInstance<Config>().RespawnMP);
-            deadPlayers.Clear();
-        }
+			deadPlayers.Clear();
+		}
 		public override void UpdateDead(){
+			BossAlive = false;
+			foreach (NPC npc in Main.npc){
+    		    if (npc.active && npc.boss){
+					BossAlive = true;
+    		    }
+    		}
 			foreach (Player player in Main.player){
 				if (player.dead && !deadPlayers.Contains(player)){
 					deadPlayers.Add(player);
+				}
+				if (player.dead && player.respawnTimer > 60 && !BossAlive){
+					player.respawnTimer = 60;
 				}
 			}
 		}
