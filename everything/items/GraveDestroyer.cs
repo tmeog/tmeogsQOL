@@ -27,42 +27,44 @@ namespace tmeogsQOL.everything.items
 			Item.UseSound = SoundID.Item29;
 			Item.autoReuse = false;
 			Item.consumable = true;
-            Item.shoot = ProjectileID.ConfettiGun;
+			Item.shoot = ProjectileID.ConfettiGun;
 			Item.shootSpeed = 4;
-            Item.maxStack = 9999;
+			Item.maxStack = 9999;
 		}
 		
 		public override bool? UseItem(Player player)
-        {
-            Random r = new();
-            if (player.altFunctionUse == 0){
+		{
+			Random r = new();
+			if (player.altFunctionUse == 0)
+			{
 				for (int i = 0; i < Main.tile.Width; i++)
-            	{
-            	    for (int j = 0; j < Main.tile.Height; j++)
-            	    {
-            	        Tile tile = Main.tile[i, j];
+				{
+					for (int j = 0; j < Main.tile.Height; j++)
+					{
+						Tile tile = Main.tile[i, j];
 	
-            	        if (tile.HasTile && tile.TileType == TileID.Tombstones){
-            	            WorldGen.KillTile(i, j);
+						if (tile.HasTile && tile.TileType == TileID.Tombstones)
+						{
+							WorldGen.KillTile(i, j);
 
 							if (Main.netMode != NetmodeID.MultiplayerClient) 
 							{
-                                int n = NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)(r.Next(2) == 0 ? player.Center.X - 2000 : player.Center.X + 2000) + r.Next(200) - 200, (int)player.Center.Y, NPCID.Ghost);
-                                if (Main.netMode == NetmodeID.Server)
-                                {
-                                    NetMessage.SendData(MessageID.SyncNPC, number: n);
-                                }
-                            }
-                        }
-            	    }
-            	}
+								int n = NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)(r.Next(2) == 0 ? player.Center.X - 2000 : player.Center.X + 2000) + r.Next(200) - 200, (int)player.Center.Y, NPCID.Ghost);
+								if (Main.netMode == NetmodeID.Server)
+								{
+									NetMessage.SendData(MessageID.SyncNPC, number: n);
+								}
+							}
+						}
+					}
+				}
 
-                if (Main.netMode != NetmodeID.MultiplayerClient)
-                {
+				if (Main.netMode != NetmodeID.MultiplayerClient)
+				{
 					Projectile.NewProjectile(Projectile.GetSource_None(), player.position, Vector2.Zero, ProjectileID.ConfettiGun, 0, 0f);
-                }
+				}
 
-                return true;
+				return true;
 			}
 			return false;
 		}

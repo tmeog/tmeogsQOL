@@ -6,7 +6,6 @@ C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\D
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\FNA.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\Hjson.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\Humanizer.dll
-C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\Ionic.Zip.Reduced.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\log4net.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\Microsoft.Build.Locator.dll
@@ -134,3 +133,4 @@ C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\obj\D
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\obj\Debug\net6.0\refint\tmeogsQOL.dll
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\obj\Debug\net6.0\tmeogsQOL.pdb
 C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\obj\Debug\net6.0\ref\tmeogsQOL.dll
+C:\Users\luigi\Documents\My Games\Terraria\tModLoader\ModSources\tmeogsQOL\bin\Debug\net6.0\DotNetZip.dll

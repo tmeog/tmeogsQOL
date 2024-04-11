@@ -36,23 +36,23 @@ namespace tmeogsQOL.everything.items
 		}
 		
 		public override bool CanUseItem(Player player)
-        {
-            for (int i = 0; i < Main.maxNPCs; i++)
-            {
-                if (Main.npc[i].active && Main.npc[i].boss)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+		{
+			for (int i = 0; i < Main.maxNPCs; i++)
+			{
+				if (Main.npc[i].active && Main.npc[i].boss)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
 
 		public override bool? UseItem(Player player)
-        {
+		{
 			string text;
 
-			if (player.altFunctionUse == 0){
-
+			if (player.altFunctionUse == 0)
+			{
 				switch (Main.GameMode){
 					case 0:
 						Main.GameMode = 1;
@@ -74,8 +74,9 @@ namespace tmeogsQOL.everything.items
 						text = "Normal mode";
 						break;
 				}
-			} else if (player.altFunctionUse == 2){
-
+			} 
+			else if (player.altFunctionUse == 2)
+			{
 				switch (player.difficulty){
 					case 0:
 						player.difficulty = 1;
@@ -97,19 +98,21 @@ namespace tmeogsQOL.everything.items
 						text = "Softcore";
 						break;
 				}
-			} else {
+			} 
+			else 
+			{
 				text = "My code is bad";
 			}
 
 			if (Main.netMode == NetmodeID.SinglePlayer)
-            {
-                Main.NewText(text, new Color(175, 75, 255));
-            }
-            else if (Main.netMode == NetmodeID.Server)
-            {
-                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), new Color(175, 75, 255));
-                NetMessage.SendData(MessageID.WorldData);
-            }
+			{
+				Main.NewText(text, new Color(175, 75, 255));
+			}
+			else if (Main.netMode == NetmodeID.Server)
+			{
+				ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), new Color(175, 75, 255));
+				NetMessage.SendData(MessageID.WorldData);
+			}
 			return true;
 		}
 	}
