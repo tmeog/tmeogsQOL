@@ -29,6 +29,10 @@ Mods: {
 			SkullEmojiProj.DisplayName: Skull Emoji Proj
 			SkullEmojiProj_purple.DisplayName: Skull Emoji Proj_purple
 			DGuardianProj.DisplayName: D Guardian Proj
+			LapseBlueProj.DisplayName: Lapse Blue Proj
+			ReversalRedProj.DisplayName: Reversal Red Proj
+			BlackFlashProj.DisplayName: Black Flash Proj
+			NPCSpawnProj.DisplayName: N P C Spawn Proj
 		}
 
 		Items: {
@@ -298,6 +302,16 @@ Mods: {
 			SkullEmoji: {
 				Tooltip: Realest gun of all time
 				DisplayName: Bone Zone
+			}
+
+			LapseBlue: {
+				Tooltip: ""
+				DisplayName: Lapse Blue
+			}
+
+			ReversalRed: {
+				Tooltip: ""
+				DisplayName: Reversal Red
 			}
 		}
 

@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\tModLoader.targets" />
   <PropertyGroup>
     <AssemblyName>tmeogsQOL</AssemblyName>
-    <TargetFramework>net6.0</TargetFramework>
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+    <None Remove="everything\items\FunStuff\LapseBlue.png" />
+    <None Remove="everything\items\FunStuff\ReversalRed.png" />
+    <None Remove="everything\proj\BlackFlashProj.png" />
+    <None Remove="everything\proj\LapseBlueProj.png" />
+    <None Remove="everything\proj\NPCSpawnProj.png" />
+    <None Remove="everything\proj\ReversalRedProj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
 </Project>

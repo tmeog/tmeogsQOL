@@ -3169,5 +3169,5 @@ namespace tmeogsQOL.everything
 			DartPistol9.AddTile(TileID.WorkBenches);
 			DartPistol9.Register();
 		}
-	}
+    }
 }

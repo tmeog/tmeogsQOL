@@ -28,15 +28,19 @@ namespace tmeogsQOL.everything.items.BossSummons
 			Item.UseSound = SoundID.Roar;
 			Item.autoReuse = false;
 			Item.consumable = false;
-			Item.shoot = ModContent.ProjectileType<PillarProj>();
+			Item.shoot = ModContent.ProjectileType<NPCSpawnProj>();
 		}
 		
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback){
 			if (Main.netMode == NetmodeID.Server) //sync time
                     NetMessage.SendData(MessageID.WorldData, -1, -1, null, 0, 0f, 0f, 0f, 0, 0, 0);
 			Point Pos = Main.MouseWorld.ToPoint();
-			Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<PillarProj>(), 0, 0, Main.myPlayer);
-			return false;
+            Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.LunarTowerNebula);
+            Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.LunarTowerSolar);
+            Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.LunarTowerStardust);
+            Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.LunarTowerVortex);
+
+            return false;
 		}
 		public override void AddRecipes()
 		{

@@ -30,7 +30,7 @@ namespace tmeogsQOL.everything.items.BossSummons
 			Item.UseSound = SoundID.Roar;
 			Item.autoReuse = false;
 			Item.consumable = false;
-			Item.shoot = ModContent.ProjectileType<SkeleProj>();
+			Item.shoot = ModContent.ProjectileType<NPCSpawnProj>();
 		}
 		
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback){
@@ -40,13 +40,13 @@ namespace tmeogsQOL.everything.items.BossSummons
 
 			string text;
             if (Main.dayTime == true)
-			{
-                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<DGuardianProj>(), 0, 0, Main.myPlayer);
+            {
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.DungeonGuardian);
                 text = "Dungeon Guardian has awoken!";
             }
 			else
-			{
-                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<SkeleProj>(), 0, 0, Main.myPlayer);
+            {
+                Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.SkeletronHead);
                 text = "Skeletron has awoken!";
             }
 

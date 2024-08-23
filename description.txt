@@ -1,11 +1,11 @@
 Adds tons of useful stuff like:
--lower celestial pillar shield (configurable)
--unconsumable boss summons
--respawn with full hp
--boss loot swaping
--new QOL items
--recipes for items without them
--npcs sell more items 
+- lower celestial pillar shield (configurable)
+- unconsumable boss summons
+- respawn with full hp (configurable)
+- boss loot swapping
+- new QOL items
+- recipes for items without them
+- npcs sell more items 
 and more. (read patch notes below for more info)
 
 Also, please leave suggestions for what I should add recipes for in the comments or in the "suggestions" discussion at the bottom of this mod in the steam workshop. thx :D

@@ -30,13 +30,13 @@ namespace tmeogsQOL.everything.items.BossSummons
 			Item.UseSound = SoundID.Roar;
 			Item.autoReuse = false;
 			Item.consumable = false;
-			Item.shoot = ModContent.ProjectileType<BeeProj>();
+			Item.shoot = ModContent.ProjectileType<NPCSpawnProj>();
 		}
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback){
 			if (Main.netMode == NetmodeID.Server) //sync time
                     NetMessage.SendData(MessageID.WorldData, -1, -1, null, 0, 0f, 0f, 0f, 0, 0, 0);
 			Point Pos = Main.MouseWorld.ToPoint();
-			Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<BeeProj>(), 0, 0, Main.myPlayer);
+			Projectile.NewProjectile(player.GetSource_ItemUse(Item), Pos.X, Pos.Y, 0, 0, ModContent.ProjectileType<NPCSpawnProj>(), 0, 0, Main.myPlayer, NPCID.QueenBee);
 
 			string text = "Queen bee has awoken!";
 
