@@ -147,6 +147,5 @@ namespace tmeogsQOL.everything.proj
             distance.Normalize();
             return distance * speed;
         }
-
     }
 }

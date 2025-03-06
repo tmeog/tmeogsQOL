@@ -2,7 +2,6 @@
 using Terraria.ModLoader;
 using System;
 using System.Collections.Generic;
-using Terraria.ID;
 using tmeogsQOL.everything.items.FunStuff;
 using System.Linq;
 
