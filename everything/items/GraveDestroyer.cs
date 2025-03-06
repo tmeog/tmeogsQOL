@@ -46,15 +46,6 @@ namespace tmeogsQOL.everything.items
 						if (tile.HasTile && tile.TileType == TileID.Tombstones)
 						{
 							WorldGen.KillTile(i, j);
-
-							if (Main.netMode != NetmodeID.MultiplayerClient) 
-							{
-								int n = NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)(r.Next(2) == 0 ? player.Center.X - 2000 : player.Center.X + 2000) + r.Next(200) - 200, (int)player.Center.Y, NPCID.Ghost);
-								if (Main.netMode == NetmodeID.Server)
-								{
-									NetMessage.SendData(MessageID.SyncNPC, number: n);
-								}
-							}
 						}
 					}
 				}

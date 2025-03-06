@@ -6,6 +6,13 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <None Remove="everything\items\magicStopwatch.png" />
+    <None Remove="everything\items\WeatherControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+=======
     <None Remove="everything\items\FunStuff\LapseBlue.png" />
     <None Remove="everything\items\FunStuff\ReversalRed.png" />
     <None Remove="everything\proj\BlackFlashProj.png" />
@@ -15,5 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Runtime" Version="4.3.1" />
+>>>>>>> master
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="everything\Commands\" />
   </ItemGroup>
 </Project>

@@ -352,7 +352,7 @@ namespace tmeogsQOL.everything
 			waterTornado.AddIngredient(ItemID.BottledWater);
 			waterTornado.AddIngredient(ItemID.WaterBucket);
 			waterTornado.AddCondition(Condition.NearWater);
-			waterTornado.AddTile(TileID.Bottles);
+			waterTornado.AddTile(TileID.TinkerersWorkbench);
 			waterTornado.Register();
 
 			Recipe fishBalloon1 = Recipe.Create(ItemID.BalloonPufferfish);
@@ -371,19 +371,19 @@ namespace tmeogsQOL.everything
 			fishBalloon3.Register();
 
 			Recipe cloudBottle = Recipe.Create(ItemID.CloudinaBottle);
-			cloudBottle.AddIngredient(ItemID.Cloud, 25);
+			cloudBottle.AddIngredient(ItemID.Cloud, 75);
 			cloudBottle.AddIngredient(ItemID.Bottle);
 			cloudBottle.AddTile(TileID.TinkerersWorkbench);
 			cloudBottle.Register();
 
 			Recipe blizzardBottle = Recipe.Create(ItemID.BlizzardinaBottle);
-			blizzardBottle.AddIngredient(ItemID.SnowBlock, 25);
+			blizzardBottle.AddIngredient(ItemID.SnowBlock, 75);
 			blizzardBottle.AddIngredient(ItemID.Bottle);
 			blizzardBottle.AddTile(TileID.TinkerersWorkbench);
 			blizzardBottle.Register();
 
 			Recipe SandBottle = Recipe.Create(ItemID.SandstorminaBottle);
-			SandBottle.AddIngredient(ItemID.SandBlock, 25);
+			SandBottle.AddIngredient(ItemID.SandBlock, 75);
 			SandBottle.AddIngredient(ItemID.Bottle);
 			SandBottle.AddTile(TileID.TinkerersWorkbench);
 			SandBottle.Register();
@@ -413,12 +413,14 @@ namespace tmeogsQOL.everything
 			
 			Recipe goldkey1 = Recipe.Create(ItemID.GoldenKey);
 			goldkey1.AddIngredient(ItemID.GoldBar, 5);
+			goldkey1.AddIngredient(ItemID.Bone);
 			goldkey1.AddTile(TileID.Anvils);
             goldkey1.Register();
 
 			Recipe goldkey2 = Recipe.Create(ItemID.GoldenKey);
 			goldkey2.AddIngredient(ItemID.PlatinumBar, 5);
-			goldkey2.AddTile(TileID.Anvils);
+			goldkey2.AddIngredient(ItemID.Bone);
+            goldkey2.AddTile(TileID.Anvils);
             goldkey2.Register();
 
 			Recipe chum = Recipe.Create(ItemID.ChumBucket);
@@ -799,7 +801,17 @@ namespace tmeogsQOL.everything
 			Night.AddTile(TileID.WorkBenches);
             Night.Register();
 
-			Recipe powerCell = Recipe.Create(ItemID.LihzahrdPowerCell);
+            Recipe Ichor = Recipe.Create(ItemID.Ichor);
+            Ichor.AddIngredient(ItemID.CursedFlame);
+            Ichor.AddTile(TileID.WorkBenches);
+            Ichor.Register();
+
+            Recipe CursedFlame = Recipe.Create(ItemID.CursedFlame);
+            CursedFlame.AddIngredient(ItemID.Ichor);
+            CursedFlame.AddTile(TileID.WorkBenches);
+            CursedFlame.Register();
+
+            Recipe powerCell = Recipe.Create(ItemID.LihzahrdPowerCell);
 			powerCell.AddIngredient(ItemID.LunarTabletFragment, 2);
 			powerCell.AddIngredient(ItemID.Glass, 5);
 			powerCell.AddIngredient(ItemID.FallenStar, 3);

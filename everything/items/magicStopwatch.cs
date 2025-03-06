@@ -41,9 +41,6 @@ namespace tmeogsQOL.everything.items
 				{
 					Main.moonPhase = 0;
 				}
-
-				if (Main.netMode == NetmodeID.MultiplayerClient)
-					NetMessage.SendData(MessageID.WorldData);
 			}
 			if (player.altFunctionUse == 2)
 			{
@@ -51,9 +48,12 @@ namespace tmeogsQOL.everything.items
 				if (++Main.moonPhase >= 8)
 				{
 					Main.moonPhase = 0;
-				}
-			}
-			return true;
+                }
+            }
+
+            if (Main.netMode == NetmodeID.MultiplayerClient)
+                NetMessage.SendData(MessageID.WorldData);
+            return true;
 		}
 
 		public override void UpdateInventory(Player player)

@@ -4,5 +4,6 @@ namespace tmeogsQOL
 {
 	public class tmeogsQOL : Mod
 	{
+
 	}
 }
