@@ -10,7 +10,7 @@ and more. (read patch notes below for more info)
 
 Also, please leave suggestions for what I should add recipes for in the comments or in the "suggestions" discussion at the bottom of this mod in the steam workshop. thx :D
 
-NEW RECIPES: 598
+NEW RECIPES: 600
 
 PATCH NOTES HAVE BEEN MOVED HERE (they got too long): https://docs.google.com/document/d/1s0ixWOXvTctGvNBgVjmEnuBLJojI1t_ux8M5xF5lh6Y/edit?usp=sharing
 Github: https://github.com/tmeog/tmeogsQOL

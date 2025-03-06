@@ -32,6 +32,11 @@ Mods: {
 		}
 
 		Items: {
+			Gambler: {
+				Tooltip: left click to gamble
+				DisplayName: Gambling
+			}
+
 			WeatherControl: {
 				Tooltip:
 					'''
@@ -46,7 +51,6 @@ Mods: {
 				Tooltip:
 					'''
 					Breaks every grave in the world
-					May also anger a few ghosts
 					'The spell that used a lot of glitter'
 					'''
 				DisplayName: Scroll of Resentment
@@ -289,7 +293,7 @@ Mods: {
 				DisplayName: Weird lookin crystal
 				Tooltip:
 					'''
-					Summons Skeletron Prime
+					Summons Queen Slime
 					Can spawn multiple bosses at once
 					Not Consumable
 					'''
@@ -329,6 +333,13 @@ Mods: {
 					Label: Difficulty Changer Available
 					Tooltip: Makes the Difficulty Changer availible (turn off if your friends are annoying)
 				}
+			}
+		}
+
+		Buffs: {
+			TimeFrozeDebuff: {
+				DisplayName: Time Froze Debuff
+				Description: Mods.tmeogsQOL.Buffs.TimeFrozeDebuff.Description
 			}
 		}
 	}

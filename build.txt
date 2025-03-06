@@ -1,4 +1,4 @@
 displayName = Requiem's Quality of Life mod
 author = Requiem
-version = 2.1.5
+version = 2.2
 sortAfter = CalamityMod, InfernumMode

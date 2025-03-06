@@ -53,6 +53,20 @@ namespace tmeogsQOL.everything
 				item.autoReuse = true;
    			}
 
+			if (item.type == ItemID.MagicMirror || 
+				item.type == ItemID.IceMirror || 
+				item.type == ItemID.CellPhone || 
+				item.type == ItemID.Shellphone ||
+                item.type == ItemID.ShellphoneDummy ||
+                item.type == ItemID.ShellphoneHell ||
+                item.type == ItemID.ShellphoneOcean ||
+                item.type == ItemID.ShellphoneSpawn)
+			{
+				item.useTime = 5;
+				item.useAnimation = 5;
+				item.autoReuse = false;
+			}
+
 		//----------------------------------------------weapon/tool changes
 		
 			if (ModContent.GetInstance<Config>().GoodAxe){
