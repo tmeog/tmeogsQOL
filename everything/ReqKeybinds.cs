@@ -17,7 +17,7 @@ namespace tmeogsQOL.everything
 
         public override void Unload()
         {
-            TimeStopKey = null;
+            // TimeStopKey = null;
         }
     }
 }
