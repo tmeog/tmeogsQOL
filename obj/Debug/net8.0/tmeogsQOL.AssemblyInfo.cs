@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d76a502c3668e43c2b5b15a4f5ada53ff761da8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88a6adb961f1d33f33d610847279aa83af847362")]
 [assembly: System.Reflection.AssemblyProductAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tmeogsQOL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
